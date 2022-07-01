@@ -1,10 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import { initializeApp } from "firebase/app";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyD4ve1JTq31-u-Vb-Rbw5z2ED9Zno9azSg",
+  authDomain: "hoppskogsfestivalen.firebaseapp.com",
+  projectId: "hoppskogsfestivalen",
+  storageBucket: "hoppskogsfestivalen.appspot.com",
+  messagingSenderId: "860824501549",
+  appId: "1:860824501549:web:d5b6ad9e23a44cad35e7a4",
+};
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
