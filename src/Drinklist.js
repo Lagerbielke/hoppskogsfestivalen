@@ -1,6 +1,15 @@
 
 import './App.css';
-
+const nonAlcohol = [
+  {
+    drinkname:  'Lemon Squash',
+    ingredients: 'Citronjuice, Sockerlag, Sodavatten',
+  },
+  {
+    drinkname:  'Priestess',
+    ingredients: 'Grenadin, Limejuice, Ginger Ale',
+  },  
+]
 const drinks = [
   {
     drinkname:  'Tequila Sunrise',
@@ -42,7 +51,7 @@ const drinks = [
 function Drinklist() {
   return (
     <div>
-      <h2>Drinklistan</h2>
+      <h2>Drinkar</h2>
       
       {drinks.map((drink) => (
       <div>
@@ -50,7 +59,15 @@ function Drinklist() {
         <p>{drink.ingredients}</p>
       </div>
       ))}
-
+    
+    
+      <h2>Alkoholfria drinkar</h2>
+      {nonAlcohol.map((drink) =>(
+        <div>
+          <h3>{drink.drinkname}</h3>
+          <p>{drink.ingredients}</p>
+        </div>
+      ))}
     </div>
     
   );
