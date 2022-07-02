@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
+
 
 body {
   margin: 0;
@@ -16,7 +19,18 @@ code {
 }
 
 h1 {
-  @apply text-white text-4xl lg:text-6xl font-bold !my-0 !py-0;
+  font-family: 'Noto Sans', sans-serif;
+  @apply text-4xl lg:text-6xl font-bold !my-0 !py-0;
+}
+
+h2 {
+  font-family: 'Noto Sans', sans-serif;
+  @apply text-2xl  font-bold !my-0 !py-0 uppercase italic;
+}
+
+h3 {
+  font-family: 'Noto Sans', sans-serif;
+  @apply text-black text-lg font-semibold uppercase italic;
 }
 
 @tailwind utilities;
