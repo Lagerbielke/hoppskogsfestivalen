@@ -15,4 +15,8 @@ code {
     monospace;
 }
 
+h1 {
+  @apply text-white text-4xl lg:text-6xl font-bold !my-0 !py-0;
+}
+
 @tailwind utilities;
